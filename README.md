@@ -70,20 +70,20 @@ https://wireframe.cc/pro/pp/5438a40a0374652
 
 ## Priority Matrix
 
-Include a full list of features that have been prioritized based on the `Time and Importance` Matrix.  Link this image in a similar manner to your wireframes
+https://wireframe.cc/pro/pp/f3194af7d374678
 
 ## Timeframes
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
 | Working with API | H | 3 hrs| 0hrs | 0hrs |
-| Creating Form | H | 3hrs| 0hrs | 0hrs |
+| Creating Form | M | 3hrs| 0hrs | 0hrs |
 | Creating Selector | H | 3hrs| 0hrs | 0hrs |
 | Creating HTML Template | M | 3hrs| 0hrs | 0hrs |
 | Appending Data | H | 3hrs| 0hrs | 0hrs |
 | CSS Styling | H | 3hrs| 0hrs | 0hrs |
 | Setting Imaging for Banners & Background | L | 3hrs| 0hrs | 0hrs |
-| Imnplement Responsive Design | H | 3hrs| 0hrs | 0hrs |
+| Imnplement Responsive Design | M | 3hrs| 0hrs | 0hrs |
 | Post MVP Additions | L | 3hrs| 0hrs | 0hrs |
 | Deploy Site to Hosting Service | H | 3hrs| 0hrs | 0hrs |
 | Total | H | 30hrs| 0hrs | 0hrs |
