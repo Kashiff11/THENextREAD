@@ -5,8 +5,13 @@ async function getData(firstName, lastName) {
     const url = `https://api.nytimes.com/svc/books/v3/reviews.json?author=${firstName}+${lastName}&api-key=eKABUa2Lya4MPuxvFBl9h5919D3o8OYn`
     const response = await axios.get(url);
     let list = [];
-    for (let i = 0; i < response.data.results.length; i++) {
-      list.push(response.data.results[i].book_title);
+    if (response.data.results.length == 0) {
+      noReviews()
+      console.log('nope');
+    } else {
+      for (let i = 0; i < response.data.results.length; i++) {
+        list.push(response.data.results[i].book_title);
+      }
     }
     console.log(list)
     createOption(list);
@@ -39,6 +44,21 @@ function emptyOptions() {
   const previousOptions = document.querySelector('select');
   while (previousOptions.hasChildNodes()) {
     previousOptions.removeChild(previousOptions.firstChild);
+  }
+}
+
+function noReviews(arr) {
+  emptyOptions();
+  emptyTitleInfo();
+  const titleInfo = document.querySelector('.title-information');
+  const p = document.createElement('p');
+  titleInfo.append(`Sorry, this author has not been reviewd by the NYT`);
+}
+
+function emptyTitleInfo() {
+  const previousTitleInfo = document.querySelector('.title-information')
+  while (previousTitleInfo.hasChildNodes()) {
+    previousTitleInfo.removeChild(previousTitleInfo.firstChild);
   }
 }
 
