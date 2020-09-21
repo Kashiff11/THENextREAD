@@ -85,7 +85,7 @@ https://wireframe.cc/pro/pp/f3194af7d374678
 | Setting Imaging for Banners & Background | L | 3hrs| 0hrs | 0hrs |
 | Imnplement Responsive Design | M | 3hrs| 0hrs | 0hrs |
 | Post MVP Additions | L | 3hrs| 0hrs | 0hrs |
-| Deploy Site to Hosting Service | H | 3hrs| 0hrs | 0hrs |
+| Deploy Site to Hosting Service | M | 3hrs| 0hrs | 0hrs |
 | Total |   | 30hrs| 0hrs | 0hrs |
 
 ## Code Snippet
