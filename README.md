@@ -76,6 +76,7 @@ https://wireframe.cc/pro/pp/f3194af7d374678
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
+| Preparing Repo | H | 3 hrs| 0hrs | 0hrs |
 | Working with API | H | 3 hrs| 0hrs | 0hrs |
 | Creating Form | M | 3hrs| 0hrs | 0hrs |
 | Creating Selector | H | 3hrs| 0hrs | 0hrs |
@@ -84,9 +85,10 @@ https://wireframe.cc/pro/pp/f3194af7d374678
 | CSS Styling | H | 3hrs| 0hrs | 0hrs |
 | Setting Imaging for Banners & Background | L | 3hrs| 0hrs | 0hrs |
 | Imnplement Responsive Design | M | 3hrs| 0hrs | 0hrs |
-| Post MVP Additions | L | 3hrs| 0hrs | 0hrs |
+| Working with post MVP API | L | 3 hrs| 0hrs | 0hrs |
+| Post MVP Additions | L | 4hrs| 0hrs | 0hrs |
 | Deploy Site to Hosting Service | M | 3hrs| 0hrs | 0hrs |
-| Total |   | 30hrs| 0hrs | 0hrs |
+| Total |   | 37hrs| 0hrs | 0hrs |
 
 ## Code Snippet
 
