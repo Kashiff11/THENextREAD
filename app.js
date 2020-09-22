@@ -7,8 +7,8 @@ async function getData(firstName, lastName) {
     let titleList = [];
 
     if (response.data.results.length == 0) {
-      noReviews()
-      console.log(`nope`)
+      noReviews();
+      console.log(`nope`);
     } else {
 
       emptyTitleInfo();   //empties previous title info or "no review" messaging
