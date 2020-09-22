@@ -11,20 +11,20 @@ async function getData(firstName, lastName) {
       console.log(`nope`);
     } else {
 
-      emptyTitleInfo();   //empties previous title info or "no review" messaging
+      emptyTitleInfo();   
 
       for (let i = 0; i < response.data.results.length; i++) {
 
         let titleObject = {
           book: response.data.results[i].book_title,
-          summary: response.data.results[i].summary,                      //creates an object of data
-          publicationDate: response.data.results[i].publication_dt,       //to push into the array
+          summary: response.data.results[i].summary,                      
+          publicationDate: response.data.results[i].publication_dt,       
           reviewAuthor: response.data.results[i].byline,
           reviewLink: response.data.results[i].url,
         };
         dataList.push(titleObject);
       }
-      console.log(dataList)
+      console.log(dataList);
 
 
       for (let i = 0; i < response.data.results.length; i++) {
@@ -56,17 +56,17 @@ function noReviews(arr) {
 }
 
 function emptyTitleInfo() {
-  const previousTitleInfo = document.querySelector('.title-information')      //empties previous info 
+  const previousTitleInfo = document.querySelector('.title-information');      
   while (previousTitleInfo.hasChildNodes()) {
     previousTitleInfo.removeChild(previousTitleInfo.firstChild);
   }
 }
 function createVariables(e) {
 
-  e.preventDefault();                                                 //creates variables from user input
-  let firstName = document.querySelector('.first').value;             //and passes them to getData function
-  let lastName = document.querySelector('.last').value
-  getData(firstName, lastName)
+  e.preventDefault();                                                 
+  let firstName = document.querySelector('.first').value;             
+  let lastName = document.querySelector('.last').value;
+  getData(firstName, lastName);
 
 }
 
@@ -75,7 +75,7 @@ document.querySelector('button').addEventListener('click', createVariables);
 function createOption(arr) {
 
   emptyOptions();
-  const select = document.querySelector('select');                //creates the options list
+  const select = document.querySelector('select');                
   return arr.forEach((title) => {
     const option = document.createElement('option');
     option.value = `${title}`;
@@ -89,6 +89,6 @@ document.querySelector('select').addEventListener('change', optionData);
 
 function optionData(e) {
   e.preventDefault();
-  const optionValue = document.querySelector('select').value
+  const optionValue = document.querySelector('select').value;
   console.log(optionValue);
 }
