@@ -9,6 +9,7 @@ async function getData(firstName, lastName) {
       noReviews()
       console.log('nope');
     } else {
+      emptyTitleInfo();
       for (let i = 0; i < response.data.results.length; i++) {
         list.push(response.data.results[i].book_title);
       }
@@ -37,7 +38,7 @@ function createOption(arr) {
     option.value = `${title}`;
     option.textContent = `${title}`;
     select.append(option);
-  })
+  });
 }
 
 function emptyOptions() {
@@ -51,7 +52,7 @@ function noReviews(arr) {
   emptyOptions();
   emptyTitleInfo();
   const titleInfo = document.querySelector('.title-information');
-  const p = document.createElement('p');
+  const h2 = document.createElement('h2');
   titleInfo.append(`Sorry, this author has not been reviewd by the NYT`);
 }
 
