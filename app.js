@@ -29,30 +29,27 @@ async function getData(firstName, lastName) {
         dataList.push(titleObject);
 
       }
-      console.log(dataList);
 
-      //document.querySelector('.buttonTwo').addEventListener('click', optionData);
+      document.querySelector('.buttonTwo').addEventListener('click', optionData);
 
-      //function optionData(e) {
-      // e.preventDefault();
-      // const optionValue = document.querySelector('select').value;
-      // console.log(optionValue);
-      // }
+      function optionData(e) {
+        e.preventDefault();
+        let optionValue = document.querySelector('select').value;
+        console.log(optionValue);
+        console.log(dataList);
+        dataObject(optionValue, dataList)
+        if (optionValue != null) {
+          optionValue = null;
+        }
+      }
 
       for (let i = 0; i < response.data.results.length; i++) {
         let title = response.data.results[i].book_title;
         titleList.push(title);
       }
-      console.log(titleList);
     }
     createOption(titleList);
 
-    //document.querySelector('.buttonTwo').addEventListener('click', optionData);
-    //function optionData(e) {
-    //e.preventDefault();
-    //const optionValue = document.querySelector('select').value;
-    //console.log(optionValue);
-    //}
   } catch (error) {
     console.log(`Error: ${error}`);
   }
@@ -97,9 +94,16 @@ function createOption(arr) {
   });
 }
 
-//document.querySelector('.buttonTwo').addEventListener('click', optionData);
-    //function optionData(e) {
-      //e.preventDefault();
-      //const optionValue = document.querySelector('select').value;
-      //console.log(optionValue);
-    //}
+function printObject(info) {
+  console.log(info);
+}
+
+function dataObject(a, arr) {
+  let screenObject = [];
+  for (let i = 0; i < arr.length; i++) {
+    if (a == arr[i].book) {
+      screenObject.push(arr[i]);
+      printObject(screenObject);
+    }
+  }
+}
