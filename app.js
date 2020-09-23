@@ -10,15 +10,10 @@ async function getData(firstName, lastName) {
     let titleList = [];
 
     if (response.data.results.length == 0) {
-
       noReviews();
-
     } else {
-
       emptyTitleInfo();
-
       for (let i = 0; i < response.data.results.length; i++) {
-
         let titleObject = {
           book: response.data.results[i].book_title,
           summary: response.data.results[i].summary,
@@ -27,7 +22,6 @@ async function getData(firstName, lastName) {
           reviewLink: response.data.results[i].url,
         };
         dataList.push(titleObject);
-
       }
 
       document.querySelector('.buttonTwo').addEventListener('click', optionData);
@@ -36,11 +30,7 @@ async function getData(firstName, lastName) {
         e.preventDefault();
         let optionValue = document.querySelector('select').value;
         console.log(optionValue);
-        console.log(dataList);
-        dataObject(optionValue, dataList)
-        if (optionValue != null) {
-          optionValue = null;
-        }
+        dataObject(optionValue, dataList);
       }
 
       for (let i = 0; i < response.data.results.length; i++) {
@@ -94,8 +84,9 @@ function createOption(arr) {
   });
 }
 
-function printObject(info) {
-  console.log(info);
+function printObject(screenObject) {
+  console.log(screenObject[0].book);
+  document.querySelector('#selected-title').append(screenObject[0].book);
 }
 
 function dataObject(a, arr) {
