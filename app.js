@@ -47,7 +47,7 @@ function emptyOptions() {
 function noReviews(arr) {
   emptyOptions();
   const titleInfo = document.querySelector('.title-information');
-  titleInfo.textContent = `Sorry, this author has not been reviewd by the NYT`;
+  titleInfo.textContent = `This author has not been reviewd by the NYT`;
 }
 function emptyTitleInfo() {
   const previousTitleInfo = document.querySelector('.title-information');
@@ -61,6 +61,7 @@ function createVariables(e) {
   let lastName = document.querySelector('.last').value;
   getData(firstName, lastName);
 }
+
 function createOption(arr) {
   const select = document.querySelector('select');
   return arr.forEach((title) => {
@@ -69,6 +70,7 @@ function createOption(arr) {
     option.textContent = `${title}`;
     select.append(option);
   });
+  
 }
 function printObject(screenObject) {
 
@@ -90,7 +92,8 @@ function printObject(screenObject) {
 
   let review = document.querySelector('#review-link');
   let theReview = screenObject[0].reviewLink
-  review.innerHTML = theReview;
+  review.href = theReview;
+  review.textContent = `${theReviewer}'s review at the NYT.`
     
   
 }
