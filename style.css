@@ -95,7 +95,19 @@ header {
 
 select {
   width: 40rem;
-  height: 2rem;
+  height: 2.5rem;
   font-family: 'Courier Prime', monospace;
   font-size: 25px;
+  border-color: black;
+  background-color: white;
+  color: rgb(82, 80, 80);
+}
+
+.buttonTwo {
+  height: 2.5rem;
+  font-family: 'Courier Prime', monospace;
+  font-size: 25px;
+  background-color: rgb(82, 80, 80);
+  color: white;
+  border-color: black;
 }
