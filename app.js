@@ -74,7 +74,7 @@ function printObject(screenObject) {
 
   let title = document.querySelector('#selected-title');
   let theBook = screenObject[0].book;
-  title.textContent = theBook;
+  title.textContent = `Title: ${theBook}`;
 
   let summary = document.querySelector('#summary');
   let theSummary = screenObject[0].summary;
@@ -82,15 +82,15 @@ function printObject(screenObject) {
 
   let pubDate = document.querySelector('#publication-date');
   let thePubDate = screenObject[0].publicationDate;
-  pubDate.textContent = thePubDate;
+  pubDate.textContent = `Publication Date: ${thePubDate}`;
 
   let reviewer = document.querySelector('#review-author');
   let theReviewer = screenObject[0].reviewAuthor;
-  reviewer.textContent = theReviewer;
+  reviewer.textContent = `Reviewed by: ${theReviewer}`;
 
   let review = document.querySelector('#review-link');
   let theReview = screenObject[0].reviewLink
-  review.textContent = theReview
+  review.innerHTML = theReview;
     
   
 }
