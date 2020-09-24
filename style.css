@@ -11,6 +11,7 @@ header {
   background-position: center;
 }
 
+
 #website-name {
   display: flex;
   font-family: 'Courier Prime', monospace;
@@ -22,10 +23,11 @@ header {
 
 .instructions {
   display: flex;
-  justify-content: center;
   font-family: 'Courier Prime', monospace;
+  align-items: center;
+  font-size: 50px;
   color: white;
-  font-size: 300%;
+  margin-left: 5%;
 }
 
 #inputContainer {
@@ -45,6 +47,8 @@ header {
   font-family: 'Courier Prime', monospace;
   color: rgb(82, 80, 80);
   font-size: 25px;
+  margin-bottom: 5px;
+  border-color: black;
 }
   
 .last {
@@ -53,6 +57,7 @@ header {
   font-family: 'Courier Prime', monospace;
   color: rgb(82, 80, 80);
   font-size: 25px;
+  border-color: black;
 }
 
 .submit_button {
@@ -61,5 +66,36 @@ header {
   font-family: 'Courier Prime', monospace;
   color: white;
   font-size: 25px;
+  margin-top: 5px;
+  width: 313px;
+  border-color: black;
 }
 
+#inputContainer {
+  display: flex;
+  margin: 40px;
+  height: 150px;
+  background-image: url("https://images.pexels.com/photos/768125/pexels-photo-768125.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+  background-size: cover;
+  background-position: center;
+  justify-content: space-around;
+  align-items: center;  
+}
+
+#authorContainer {
+  display: flex;
+  margin: 40px;
+  height: 150px;
+  background-image: url("https://images.pexels.com/photos/768125/pexels-photo-768125.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+  background-size: cover;
+  background-position: center;
+  justify-content: space-around;
+  align-items: center;  
+}
+
+select {
+  width: 40rem;
+  height: 2rem;
+  font-family: 'Courier Prime', monospace;
+  font-size: 25px;
+}
