@@ -10,6 +10,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script defer src="./app.js"></script>
+    <link rel="stylesheet" href="style.css"></style>
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet">
     <title>NYT Data</title>
   </head>
   <title>NYT</title>
@@ -19,15 +21,20 @@
 
 <body>
 
-  <banner>
-    <h1>THENextREAD</h1>
-  </banner>
+  <header>
+    <h1 id="website-name">THENextREAD</h1>
+    <img src="" alt="">
+  </header>
+
+  <div class="instructions">
+    <h3>Type in your favorite auhtor's name.</h3>
+  </div>
 
   <div id="inputContainer">
     <form class="user-submission">
-      <input type="text" onfocus="this.value=''" class="first">
-      <input type="text" onfocus="this.value=''" class="last">
-      <button type="submit" class="submit_button">SUBMIT</button>
+      <input type="text" placeholder="First Name" onfocus="this.value=''" class="first">
+      <input type="text" placeholder="Last Name" onfocus="this.value=''" class="last">
+      <button type="submit" class="submit_button" class="authorinput">SUBMIT</button>
   </div>
 
   <div>

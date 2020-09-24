@@ -1,0 +1,62 @@
+body {
+  background-color: rgb(82, 80, 80);
+}
+
+header {
+  display: flex;
+  margin: 40px;
+  height: 150px;
+  background-image: url("https://images.unsplash.com/photo-1478104718532-efe04cc3ff7f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80");
+  background-size: cover;
+  background-position: center;
+}
+
+#website-name {
+  display: flex;
+  font-family: 'Courier Prime', monospace;
+  align-items: center;
+  font-size: 50px;
+  color: white;
+  margin-left: 5%;
+}
+
+.instructions {
+  display: flex;
+  justify-content: center;
+  font-family: 'Courier Prime', monospace;
+  color: white;
+  font-size: 20px;
+}
+
+#inputContainer {
+  display: flex;
+  margin: 40px;
+  height: 150px;
+  background-image: url("https://images.pexels.com/photos/768125/pexels-photo-768125.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+  background-size: cover;
+  background-position: center;
+  justify-content: space-around;
+  align-items: center;  
+}
+
+.first {
+  background-color: white;
+  font-family: 'Courier Prime', monospace;
+  color: rgb(82, 80, 80);
+  font-size: 25px;
+}
+  
+.last {
+  background-color: white;
+  font-family: 'Courier Prime', monospace;
+  color: rgb(82, 80, 80);
+  font-size: 25px;
+}
+
+.submit_button {
+  background-color: rgb(82, 80, 80);
+  font-family: 'Courier Prime', monospace;
+  color: white;
+  font-size: 25px;
+}
+
