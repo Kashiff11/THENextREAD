@@ -1,3 +1,5 @@
+document.querySelector('.first').addEventListener('click', clearPrevInfo);
+document.querySelector('.last').addEventListener('click', clearPrevInfo);
 document.querySelector('button').addEventListener('click', createVariables);
 
 async function getData(firstName, lastName) {
@@ -24,8 +26,6 @@ async function getData(firstName, lastName) {
       function optionData(e) {
         e.preventDefault();
         let optionValue = document.querySelector('select').value;
-        console.log(optionValue);
-        console.log(dataList)
         dataObject(optionValue, dataList);
       }
       for (let i = 0; i < response.data.results.length; i++) {
@@ -44,17 +44,15 @@ function emptyOptions() {
     previousOptions.removeChild(previousOptions.firstChild);
   }
 }
+
 function noReviews(arr) {
-  emptyOptions();
-  const titleInfo = document.querySelector('.title-information');
-  titleInfo.textContent = `This author has not been reviewd by the NYT`;
-}
-function emptyTitleInfo() {
-  const previousTitleInfo = document.querySelector('.title-information');
-  while (previousTitleInfo.hasChildNodes()) {
-    previousTitleInfo.removeChild(previousTitleInfo.firstChild);
+  clearPrevInfo();
+  const select = document.querySelector('select');
+  const option = document.createElement('option');
+  option.textContent = `No Titles Reviewed by the NYT`;
+  select.append(option);
   }
-}
+
 function createVariables(e) {
   e.preventDefault();
   let firstName = document.querySelector('.first').value;
@@ -63,6 +61,7 @@ function createVariables(e) {
 }
 
 function createOption(arr) {
+  clearPrevInfo();
   const select = document.querySelector('select');
   return arr.forEach((title) => {
     const option = document.createElement('option');
@@ -106,4 +105,17 @@ function dataObject(a, arr) {
       printObject(screenObject);
     }
   }
+}
+
+function clearPrevInfo() {
+  let title = document.querySelector('#selected-title');
+  title.textContent = ``;
+  let summary = document.querySelector('#summary');
+  summary.textContent = ``;
+  let pubDate = document.querySelector('#publication-date');
+  pubDate.textContent = ``;
+  let reviewer = document.querySelector('#review-author');
+  reviewer.textContent = ``;
+  let review = document.querySelector('#review-link');
+  review.textContent = `` 
 }
