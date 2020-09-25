@@ -64,8 +64,9 @@ https://wireframe.cc/pro/pp/5438a40a0374652
 |Sept 18-21| Prompt / Wireframes / Priority Matrix / Timeframes | Complete
 |Sept 21| Project Approval | Complete
 |Sept 22| Core Application Structure (HTML, CSS, etc.) | Complete
-|Sept 23| MVP | Incomplete
-|Sept 24| Post MVP/Styling | Incomplete
+|Sept 23| MVP | Complete
+|Sept 24| Styling | Complete
+|Sept 24| Post MVP | Incomplete
 |Sept 25| Presentations | Incomplete
 
 ## Priority Matrix
@@ -77,18 +78,18 @@ https://wireframe.cc/pro/pp/f3194af7d374678
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
 | Preparing Repo | H | 3 hrs| 3.5hrs | 3.5hrs |
-| Working with API | H | 3 hrs| 4hrs | 4hrs |
+| Working with API | H | 3 hrs| 5hrs | 5hrs |
 | Creating Form | M | 3hrs| 3hrs | 3hrs |
 | Creating Selector | H | 3hrs| 2hrs | 2hrs |
 | Creating HTML Template | M | 3hrs| 2hrs | 2hrs |
 | Appending Data | H | 3hrs| 5hrs | 5hrs |
 | CSS Styling | H | 3hrs| 3hrs | 3hrs |
 | Setting Imaging for Banners & Background | L | 3hrs| 4hrs | 4hrs |
-| Imnplement Responsive Design | M | 3hrs| 0hrs | 0hrs |
+| Imnplement Responsive Design | M | 3hrs| 2hrs | 2hrs |
 | Working with post MVP API | L | 3 hrs| 0hrs | 0hrs |
 | Post MVP Additions | L | 4hrs| 0hrs | 0hrs |
 | Deploy Site to Hosting Service | M | 3hrs| 0hrs | 0hrs |
-| Total |   | 37hrs| 26.5hrs | 26.5hrs |
+| Total |   | 37hrs| 34.5hrs | 34.5hrs |
 
 ## Code Snippet
 
