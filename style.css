@@ -144,8 +144,11 @@ footer {
   display: flex;
   margin: 1% 10%;
   justify-content: space-evenly;
-  background-image: url("./images/pexels-ekrulila-2203051.jpg");
+  background-image: url("https://images.pexels.com/photos/768125/pexels-photo-768125.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+  background-size: cover;
+  background-position: bottom;
   font-family: 'Courier Prime', monospace;
+  color: white;
 }
 
 @media (max-width: 425px) {
