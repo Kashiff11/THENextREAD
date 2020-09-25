@@ -96,8 +96,17 @@ https://wireframe.cc/pro/pp/f3194af7d374678
 Use this section to include a brief code snippet of functionality that you are proud of and a brief description.  
 
 ```
-function yetToCome(string) {
-	// here is the code that is yet to come
+function clearPrevInfo() {
+  let title = document.querySelector('#selected-title');
+  title.textContent = ``;
+  let summary = document.querySelector('#summary');
+  summary.textContent = ``;
+  let pubDate = document.querySelector('#publication-date');
+  pubDate.textContent = ``;
+  let reviewer = document.querySelector('#review-author');
+  reviewer.textContent = ``;
+  let review = document.querySelector('#review-link');
+  review.textContent = `` 
 }
 ```
 
