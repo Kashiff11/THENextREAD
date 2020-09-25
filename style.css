@@ -140,6 +140,14 @@ select {
   font-size: 2rem;
 }
 
+footer {
+  display: flex;
+  margin: 1% 10%;
+  justify-content: space-evenly;
+  background-image: url("./images/pexels-ekrulila-2203051.jpg");
+  font-family: 'Courier Prime', monospace;
+}
+
 @media (max-width: 425px) {
 
   header {
@@ -260,6 +268,10 @@ select {
 
 #selected-title {
   font-size: 20px;
+}
+
+footer {
+  margin: 5% auto;  
 }
 
 }

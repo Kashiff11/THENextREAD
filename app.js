@@ -2,6 +2,13 @@ document.querySelector('.first').addEventListener('click', clearPrevInfo);
 document.querySelector('.last').addEventListener('click', clearPrevInfo);
 document.querySelector('button').addEventListener('click', createVariables);
 
+function createVariables(e) {
+  e.preventDefault();
+  let firstName = document.querySelector('.first').value;
+  let lastName = document.querySelector('.last').value;
+  getData(firstName, lastName);
+}
+
 async function getData(firstName, lastName) {
   emptyOptions();
   try {
@@ -38,6 +45,7 @@ async function getData(firstName, lastName) {
     console.log(`Error: ${error}`);
   }
 }
+
 function emptyOptions() {
   const previousOptions = document.querySelector('select');
   while (previousOptions.hasChildNodes()) {
@@ -49,16 +57,9 @@ function noReviews(arr) {
   clearPrevInfo();
   const select = document.querySelector('select');
   const option = document.createElement('option');
-  option.textContent = `No Titles Reviewed by the NYT`;
+  option.textContent = `No book reviews at the NYT`;
   select.append(option);
   }
-
-function createVariables(e) {
-  e.preventDefault();
-  let firstName = document.querySelector('.first').value;
-  let lastName = document.querySelector('.last').value;
-  getData(firstName, lastName);
-}
 
 function createOption(arr) {
   clearPrevInfo();
@@ -71,6 +72,7 @@ function createOption(arr) {
   });
   
 }
+
 function printObject(screenObject) {
 
   let title = document.querySelector('#selected-title');
@@ -93,8 +95,6 @@ function printObject(screenObject) {
   let theReview = screenObject[0].reviewLink
   review.href = theReview;
   review.textContent = `${theReviewer}'s review at the NYT.`
-    
-  
 }
 
 function dataObject(a, arr) {
